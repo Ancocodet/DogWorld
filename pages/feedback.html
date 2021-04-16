@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>DogWorld | Feedback</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <a class="logo" href="../index.html"><h2>Dogworld</h2></a>
+      <nav>
+          <ul class="nav__links">
+              <li><a href="../index.html">Hunderassen</a></li>
+              <li><a href="about.html">Über uns</a></li>
+          </ul>
+      </nav>
+      <a class="nav_btn active" href="#">Feedback</a>
+    </header>
+    <main>
+      <br>
+      <div class="container">
+        <div class="col-8">
+          <h2 class="text-center">Feedback</h2>
+          <div class="divider"></div>
+          <br>
+          <form action="feedback.php" method="post">
+            <div class="container">
+              <div class="col-6">
+                <label for="firstname">Vorname</label>
+                <input type="text" id="firstname" name="firstname" placeholder="Dein Vorname..." required/>
+              </div>
+              <div class="col-6">
+                <label for="lastname">Nachname</label>
+                <input type="text" id="lastname" name="lastname" placeholder="Dein Nachname..." required/>
+              </div>
+            </div>
+            <div class="container">
+              <div class="col-12">
+                <label for="lastname">Nachricht</label>
+                <textarea id="message" name="message" placeholder="Deine Nachricht..." required></textarea>
+              </div>
+            </div>
+            <div class="container">
+              <div class="col-4">
+                <button class="btn" type="submit">Absenden</button>
+              </div>
+              <div class="col-4">
+                <button class="btn red" type="reset">Reset</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <h4>
+        &copy 2021 Copyright by DogWorld
+      </h4>
+    </footer>
+  </body>
+</html>
